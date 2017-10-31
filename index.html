@@ -6,20 +6,21 @@
         <title>TVShow</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div class="">
-            <section class="">
-                <h1 class="">Buscador de series</h1>
-                <form id="" class="" action="">
-                    <div class="">
-                        <div class="">
-                           <div class="">
-                             <input id="txtShow" type="text" class="" placeholder="Nombre de la serie..." aria-label="Search for...">
-                             <span class="">
-                               <button class=""><i class="fa fa-search" aria-hidden="true"></i></button>
+        <div class="container">
+            <section class="jumbotron">
+                <h1 class="text-center">Buscador de series</h1>
+                <form id="search" class="" action="">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-7">
+                           <div class="input-group">
+                             <input id="txtShow" type="text" class="form-control" placeholder="Nombre de la serie..." aria-label="Search for...">
+                             <span class="input-group-btn">
+                               <button class="btn btn-danger"><i class="fa fa-search" aria-hidden="true"></i></button>
                              </span>
                            </div>
                          </div>
@@ -27,9 +28,12 @@
                 </form>
             </section>
             <section class="shows">
-                <div class=""></div>
+                <div class="loader"></div>
             </section>
         </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
